@@ -1,0 +1,50 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: linguaverse-server
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:linguaverse}?useUnicode=true&characterEncoding=UTF-8&connectionCollation=utf8mb4_unicode_ci&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:db/schema.sql
+      encoding: UTF-8
+      continue-on-error: false
+  jackson:
+    time-zone: Asia/Shanghai
+    serialization:
+      write-dates-as-timestamps: false
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
+linguaverse:
+  jwt:
+    # 生产环境必须通过环境变量覆盖
+    secret: ${JWT_SECRET:linguaverse-dev-secret-please-change-in-prod-0123456789abcdef}
+    expire-days: 7
+  login:
+    max-failures: 5
+    lock-minutes: 10
+  cors:
+    allowed-origins: http://localhost:5173,http://127.0.0.1:5173
+
+logging:
+  level:
+    cn.linguaverse: info
