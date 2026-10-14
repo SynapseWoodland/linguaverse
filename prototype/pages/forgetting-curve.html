@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>遗忘曲线 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="review" data-phase="1">
+<div class="wrap-narrow" style="padding-top:32px">
+  <h1 class="serif-cn" style="font-size:28px">我的遗忘曲线</h1>
+  <p class="muted small mt-md">在每个记忆即将下滑的节点安排一次复习，记忆保持就能被重新拉满。</p>
+
+  <div class="card mt-xl">
+    <div class="row-between tiny muted"><span>单个单词的记忆保持示意（30 天）</span><span><span class="row gap-sm"><i class="badge-dot" style="background:var(--stamp)"></i>不复习 <i class="badge-dot" style="background:var(--ok)"></i>按计划复习</span></div>
+    <svg viewBox="0 0 600 240" class="mt-lg" style="width:100%;height:auto">
+      <line x1="40" y1="200" x2="580" y2="200" stroke="#D6D1C2" stroke-width="1.5"/>
+      <line x1="40" y1="20" x2="40" y2="200" stroke="#D6D1C2" stroke-width="1.5"/>
+      <!-- 不复习：陡降 -->
+      <path d="M40,30 C120,34 150,120 210,165 C300,205 420,198 560,196" fill="none" stroke="#C2452F" stroke-width="2.5" stroke-dasharray="6 5"/>
+      <!-- 按计划复习：波浪式下降但抬升 -->
+      <path d="M40,30 C90,32 120,70 150,82 C175,55 200,40 240,46 C300,52 330,96 360,104 C392,70 420,58 460,64 C510,70 540,92 560,98" fill="none" stroke="#3E7A63" stroke-width="3"/>
+      <!-- 复习点 -->
+      <circle cx="150" cy="82" r="6" fill="#EFEDE4" stroke="#3E7A63" stroke-width="2.5"/>
+      <circle cx="360" cy="104" r="6" fill="#EFEDE4" stroke="#3E7A63" stroke-width="2.5"/>
+      <circle cx="460" cy="64" r="6" fill="#EFEDE4" stroke="#3E7A63" stroke-width="2.5"/>
+      <text x="150" y="128" font-size="11" fill="#6E7785" text-anchor="middle">第 1 天</text>
+      <text x="360" y="150" font-size="11" fill="#6E7785" text-anchor="middle">第 3 天</text>
+      <text x="460" y="50" font-size="11" fill="#6E7785" text-anchor="middle">第 7 天</text>
+      <text x="30" y="34" font-size="10" fill="#6E7785">100%</text>
+      <text x="22" y="204" font-size="10" fill="#6E7785">0</text>
+    </svg>
+    <p class="tiny muted center">复习时机：记忆自然下滑的拐点（图中圆点），而不是忘了之后才背。</p>
+  </div>
+
+  <h2 class="serif-cn mt-xl" style="font-size:20px">你的记忆阶段分布</h2>
+  <div class="grid mt-lg" style="grid-template-columns:repeat(4,1fr);gap:12px">
+    <div class="stamp-card center" style="padding:18px 8px"><b class="display text-stamp" style="font-size:26px">9</b><p class="tiny muted mt-md">阶段 0–1 · 新词</p></div>
+    <div class="stamp-card center" style="padding:18px 8px"><b class="display text-gold" style="font-size:26px">22</b><p class="tiny muted mt-md">阶段 2 · 模糊</p></div>
+    <div class="stamp-card center" style="padding:18px 8px"><b class="display" style="font-size:26px;color:var(--ok)">20</b><p class="tiny muted mt-md">阶段 3 · 认识</p></div>
+    <div class="stamp-card center" style="padding:18px 8px"><b class="display" style="font-size:26px;color:var(--passport)">13</b><p class="tiny muted mt-md">已掌握</p></div>
+  </div>
+
+  <div class="card mt-lg">
+    <p class="tiny muted" style="letter-spacing:.2em">三档评价如何推进阶段</p>
+    <div class="kv mt-md"><b class="small">✗ 不认识</b><span class="small">回到阶段 0，当天再次出现</span></div>
+    <div class="kv"><b class="small">～ 模糊</b><span class="small">阶段 +1，明天复习</span></div>
+    <div class="kv"><b class="small">✓ 认识</b><span class="small">阶段 +2，3 天后复习；连续达标转为已掌握</span></div>
+  </div>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

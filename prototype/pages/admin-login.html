@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后台登录 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="1">
+<div class="cover" style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px">
+  <div style="width:100%;max-width:380px">
+    <div class="center">
+      <div class="brand" style="color:#ECE8DB;justify-content:center;font-size:22px"><span class="brand-mark">L</span>LinguaVerse · 管理后台</div>
+      <p class="tiny muted mt-md">仅限运营与管理员账户，登录会记录时间与设备。</p>
+    </div>
+    <form class="card mt-lg" onsubmit="location.href='admin-dashboard.html';return false">
+      <div class="field"><label>管理员账号</label><input class="input" placeholder="admin@linguaverse.cn" value="admin.wang"></div>
+      <div class="field"><label>密码</label><input class="input" type="password" placeholder="独立于学习账户的密码"></div>
+      <div class="field"><label>动态验证码</label><input class="input" placeholder="6 位 · 双因素（P1 安全加固）" style="letter-spacing:.3em"></div>
+      <button class="btn btn-primary btn-block" type="submit">登录后台</button>
+    </form>
+    <p class="tiny muted center mt-lg"><a href="../index.html" style="color:#9DB6D6;text-decoration:underline">← 返回原型索引</a> · 连续 5 次失败将锁定并通知超管</p>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

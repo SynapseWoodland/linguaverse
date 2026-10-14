@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口语跟读 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="m">
+<div style="max-width:680px;margin:0 auto;padding:24px 20px 60px">
+  <div class="row-between tiny muted">
+    <a href="lesson.html">← 返回课时</a>
+    <span>口语 · 3 / 5 句</span>
+  </div>
+  <div class="bar mt-lg"><i class="ko-fill" style="width:60%"></i></div>
+
+  <div class="card mt-xl center">
+    <p class="tiny muted" style="letter-spacing:.2em">VOICE PRACTICE</p>
+    <h1 class="serif-cn mt-md" style="font-size:24px">听一句，跟读一句</h2>
+    <p class="small muted mt-md">评分基于浏览器语音识别；设备不支持时会自动换成三档自评，两种方式都能完成课时。</p>
+  </div>
+
+  <!-- 跟读句 -->
+  <div class="card mt-lg">
+    <div class="row gap-lg">
+      <button class="btn btn-ghost" data-play>▶</button>
+      <div style="flex:1">
+        <p class="serif" style="font-size:21px">Can I have a medium latte, please?</p>
+        <p class="tiny muted mt-md">请给我一杯中杯拿铁。</p>
+      </div>
+    </div>
+
+    <!-- 已完成的评分态 -->
+    <div class="row-between stamp-card mt-lg" style="padding:14px 16px;background:rgba(62,122,99,.06);border-color:rgba(62,122,99,.35)">
+      <div class="row gap-md">
+        <span class="ring ko-ring" style="--p:92;--size:56px"><span style="font-size:13px">92</span></span>
+        <div><b class="small text-ok">发音很好</b><p class="tiny muted mt-md">latte 重音再靠后一点点</p></div>
+      </div>
+      <button class="btn btn-ghost btn-sm" data-mark="重新录音中…">↻ 重录</button>
+    </div>
+
+    <!-- 当前录音态 -->
+    <div class="center mt-xl">
+      <button class="rubber" style="--s:96px;margin:0 auto;border:0;background:var(--stamp);color:#fff" data-mark="浏览器语音识别中（Web Speech API）…">
+        <span class="r-main" style="font-size:22px">●</span><span class="r-date">TAP & SPEAK</span>
+      </button>
+      <p class="small mt-md" style="color:var(--stamp);font-weight:600">正在识别……跟着读一遍上面的句子</p>
+      <div class="row gap-sm mt-md" style="justify-content:center">
+        <i style="width:5px;height:14px;background:var(--stamp);border-radius:2px"></i><i style="width:5px;height:22px;background:var(--stamp)"></i><i style="width:5px;height:10px;background:var(--stamp)"></i><i style="width:5px;height:26px;background:var(--stamp)"></i><i style="width:5px;height:16px;background:var(--stamp)"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- 降级态：不支持语音识别的设备 -->
+  <div class="card mt-xl" style="border-style:dashed">
+    <div class="row gap-md">
+      <span class="text-gold" style="font-size:20px">⚠</span>
+      <div>
+        <b class="small">当前浏览器不支持语音识别，已为你切换为自评模式</b>
+        <p class="tiny muted mt-md">播放原音后自己跟读，凭感觉选一档。自评同样计入课时完成，结果只用于记录，不打分。</p>
+      </div>
+    </div>
+    <div class="grid mt-lg" style="grid-template-columns:repeat(3,1fr);gap:10px">
+      <button class="btn btn-ghost btn-sm" data-mark="自评：还需练习">还需练习</button>
+      <button class="btn btn-ghost btn-sm" style="border-color:var(--gold);color:var(--gold)" data-mark="自评：差不多">差不多</button>
+      <button class="btn btn-primary btn-sm" style="background:var(--ok)" data-mark="自评：很流利">很流利</button>
+    </div>
+  </div>
+
+  <div class="row-between mt-lg">
+    <a class="btn btn-ghost" href="listening.html">← 回听力</a>
+    <a class="btn btn-stamp" href="lesson-complete.html">完成全部 5 句 →</a>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

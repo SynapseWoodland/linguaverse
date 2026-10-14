@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 对话练习 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="2">
+<div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;height:100vh;padding:18px 20px 0">
+  <div class="row-between">
+    <a class="tiny muted" href="home.html">← 退出</a>
+    <div class="center">
+      <span class="rubber gold sm" style="--s:40px;display:inline-flex"><span class="r-main" style="font-size:10px">AI</span></span>
+      <b class="small" style="margin-left:8px">咖啡店店员 · AI 场景陪练</b>
+    </div>
+    <span class="mini-phase mini-2">P2</span>
+  </div>
+
+  <div class="card mt-md" style="padding:8px 14px;text-align:center">
+    <p class="tiny muted">场景：你走进一家咖啡店，店员会用英语招呼你。试着用今天学的点单句型完成对话。</p>
+  </div>
+
+  <div class="col gap-md mt-lg" style="flex:1;overflow:auto;padding-bottom:12px">
+    <div class="bubble other">Hi there! What can I get for you today?</div>
+    <p class="tiny muted" style="margin-left:14px">店员 · 提示：可以用 Can I have…? 开头</p>
+    <div class="bubble me">Can I… hmm, a coffee please.</div>
+    <div class="bubble other">Sure! What size would you like — small, medium, or large?</div>
+    <div class="bubble me">Medium, please. For here.</div>
+    <!-- AI 纠错卡片 -->
+    <div class="visa" style="margin-left:14px;max-width:88%">
+      <p class="tiny text-gold" style="font-weight:700">AI 小建议 · 不打断对话</p>
+      <p class="small mt-md">意思完全传达出来了！更自然的说法是：</p>
+      <p class="serif small mt-md" style="background:rgba(255,255,255,.55);padding:8px 10px;border-radius:6px">Can I have a <b class="text-stamp">medium coffee</b>, please? For here.</p>
+      <p class="tiny muted mt-md">点单时把尺寸放在东西前面。继续对话吧，店员还在等你。</p>
+    </div>
+    <div class="bubble other">Got it, a medium coffee for here. Anything else?</div>
+    <div class="row gap-sm" style="margin-left:14px;margin-top:2px"><button class="chip active" data-play>▶ 听这句</button><button class="chip" data-mark="原型示意：慢速 0.8×">慢速</button></div>
+  </div>
+
+  <div class="row gap-md" style="padding:10px 0 18px;border-top:var(--hairline);padding-top:12px">
+    <input class="input" placeholder="用英语回复店员…（错了也没关系）">
+    <button class="btn btn-stamp" data-mark="原型示意：发送给 AI">发送</button>
+    <button class="btn btn-ghost btn-sm" data-play style="width:44px">🎙</button>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

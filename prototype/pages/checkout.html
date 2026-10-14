@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>收银台 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="dashboard" data-phase="2">
+<div class="wrap-narrow" style="padding-top:32px">
+  <a class="tiny muted" href="membership.html">← 返回会员页</a>
+  <h1 class="serif-cn mt-md" style="font-size:26px">确认订阅</h1>
+
+  <div class="card mt-lg">
+    <div class="row-between stamp-card" style="padding:16px;background:var(--paper)">
+      <div><b class="small">Passport Pro · 月卡</b><p class="tiny muted mt-md">按月订阅，随时取消</p></div>
+      <b class="serif-cn">¥30.00</b>
+    </div>
+    <div class="kv mt-md"><span class="small muted">小计</span><span class="small">¥30.00</span></div>
+    <div class="kv"><span class="small muted">优惠</span><span class="small text-ok">无</span></div>
+    <div class="kv"><b class="small">实付</b><b class="serif-cn text-stamp" style="font-size:20px">¥30.00</b></div>
+    <p class="tiny muted mt-md">首期今日扣款，之后每月 13 日自动续期；可随时在会员页关闭，关闭后权益保留到本周期结束。</p>
+  </div>
+
+  <div class="card mt-md">
+    <p class="tiny muted" style="letter-spacing:.2em">支付方式</p>
+    <label class="row gap-md stamp-card mt-md" style="padding:14px 16px;cursor:pointer;border:2px solid var(--stamp)"><input type="radio" name="pay" checked><span class="small" style="flex:1"><b>微信支付</b></span><span class="text-stamp">●</span></label>
+    <label class="row gap-md stamp-card mt-sm" style="padding:14px 16px;cursor:pointer"><input type="radio" name="pay"><span class="small" style="flex:1"><b>支付宝</b></span></label>
+    <label class="row gap-md stamp-card mt-sm" style="padding:14px 16px;cursor:pointer"><input type="radio" name="pay"><span class="small" style="flex:1"><b>App Store / 应用商店内购</b><span class="tiny muted block">在 App 内打开时可选</span></span></label>
+  </div>
+
+  <div class="card mt-md">
+    <p class="tiny muted" style="letter-spacing:.2em">发票与退款</p>
+    <p class="small muted mt-md line">可在订单完成后申请电子发票；开通 7 天内未使用 AI 与进阶语料可申请退款（P2 完整服务条款）。</p>
+  </div>
+
+  <button class="btn btn-stamp btn-lg btn-block mt-lg" data-mark="原型示意：跳转支付并完成订阅">确认支付 ¥30.00</button>
+  <p class="tiny muted center mt-lg">支付过程全程加密，平台不接触你的支付密码。</p>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

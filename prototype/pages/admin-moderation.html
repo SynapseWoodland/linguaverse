@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内容审核 · LinguaVerse 后台</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="admin" data-nav="mod" data-phase="1">
+<main class="admin-main">
+  <h1 class="serif-cn" style="font-size:24px">内容审核</h1>
+
+  <div class="grid mt-lg" style="grid-template-columns:repeat(4,1fr);gap:14px">
+    <div class="card"><p class="tiny muted">待处理举报</p><div class="display text-stamp mt-md" style="font-size:26px">7</div></div>
+    <div class="card"><p class="tiny muted">系统自动隐藏</p><div class="display text-gold mt-md" style="font-size:26px">3</div></div>
+    <div class="card"><p class="tiny muted">今日已处理</p><div class="display mt-md" style="font-size:26px;color:var(--ok)">24</div></div>
+    <div class="card"><p class="tiny muted">平均处理时长</p><div class="display mt-md" style="font-size:26px">3.2h</div></div>
+  </div>
+
+  <div class="card mt-lg">
+    <div class="row-between">
+      <p class="tiny muted" style="letter-spacing:.2em">举报队列 · 按时间排序</p>
+      <div class="row gap-sm">
+        <span class="chip active">全部</span><span class="chip">广告引流</span><span class="chip">辱骂骚扰</span><span class="chip">不当内容</span>
+      </div>
+    </div>
+
+    <!-- 待审 1 -->
+    <div class="stamp-card mt-lg" style="border-left:3px solid var(--stamp)">
+      <div class="row gap-md">
+        <span class="avatar sm" style="width:28px;height:28px;font-size:12px;background:#8a93a0">广</span>
+        <div style="flex:1"><b class="small">广告小号 233</b><p class="tiny muted">10-13 13:40 · 被 5 人举报 · 广告引流</p></div>
+        <span class="chip" style="border-color:var(--stamp);color:var(--stamp)">已自动隐藏</span>
+      </div>
+      <p class="small mt-md" style="line-height:1.8;padding:12px;background:var(--paper);border-radius:6px">“加我 vx：xxxxx，免费送日语 N1 资料包（点链接进群还有课程优惠）…”（同内容 1 分钟发 3 次）</p>
+      <div class="row gap-sm mt-lg" style="flex-wrap:wrap">
+        <button class="btn btn-danger btn-sm" data-mark="已处理：删除内容并封禁 7 天">删除 + 封禁 7 天</button>
+        <button class="btn btn-ghost btn-sm" data-mark="已处理：维持隐藏">仅删除</button>
+        <button class="btn btn-ghost btn-sm" data-mark="已驳回举报并恢复展示">驳回举报（恢复展示）</button>
+        <span class="tiny muted" style="margin-left:auto">处理留痕：审核员 admin.wang</span>
+      </div>
+    </div>
+
+    <!-- 待审 2 -->
+    <div class="stamp-card mt-md">
+      <div class="row gap-md">
+        <span class="avatar ko sm" style="width:28px;height:28px;font-size:12px">俊</span>
+        <div style="flex:1"><b class="small">俊介君</b><p class="tiny muted">10-13 10:15 · 被 1 人举报 · 辱骂骚扰</p></div>
+        <span class="chip" style="border-color:var(--gold);color:var(--gold)">待人工判断</span>
+      </div>
+      <p class="small mt-md" style="line-height:1.8;padding:12px;background:var(--paper);border-radius:6px">“你这发音真的别出来误导人了…”（被指人身高亮；上下文为正常口语互评）</p>
+      <div class="row gap-sm mt-lg" style="flex-wrap:wrap">
+        <button class="btn btn-ghost btn-sm" style="border-color:var(--ok);color:var(--ok)" data-mark="已驳回：属于尖锐但正常的互评">驳回，保留内容</button>
+        <button class="btn btn-ghost btn-sm" data-mark="已给双方发友善提醒">发友善提醒</button>
+        <button class="btn btn-ghost btn-sm" style="color:var(--stamp)" data-mark="已删除不当言论">删除内容</button>
+      </div>
+    </div>
+
+    <!-- 待审 3 -->
+    <div class="stamp-card mt-md" style="opacity:.75">
+      <div class="row gap-md">
+        <span class="avatar sm" style="width:28px;height:28px;font-size:12px">鱼</span>
+        <div style="flex:1"><b class="small">鱼干子</b><p class="tiny muted">10-12 22:31 · 被 2 人举报 · 其他</p></div>
+        <span class="chip">待审</span>
+      </div>
+      <p class="small mt-md muted" style="line-height:1.8;padding:12px;background:var(--paper);border-radius:6px">“附学习计划表截图一张”（含个人手机号水印，疑似泄露隐私）</p>
+      <div class="row gap-sm mt-lg">
+        <button class="btn btn-ghost btn-sm" data-mark="已提醒用户打码后重新发布">提醒打码</button>
+        <button class="btn btn-ghost btn-sm" style="color:var(--stamp)" data-mark="已删除：含个人联系方式">删除</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="tiny muted mt-lg">P1 自动机审先隐藏可疑内容，人工只做最终判定；所有判定与理由写入审计日志。</p>
+  <p style="height:30px"></p>
+</main>
+<script src="../assets/app.js"></script>
+</body>
+</html>

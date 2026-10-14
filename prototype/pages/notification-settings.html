@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>提醒设置 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="dashboard" data-phase="1">
+<div class="wrap-narrow" style="padding-top:34px">
+  <a class="tiny muted" href="profile.html">← 返回我的</a>
+  <h1 class="serif-cn mt-md" style="font-size:27px">提醒设置</h1>
+  <p class="muted small mt-md">只在你允许的时间、用你允许的方式提醒。移动端系统推送将在 App / PWA 版本提供。</p>
+
+  <div class="card mt-lg">
+    <p class="tiny muted" style="letter-spacing:.2em">学习提醒</p>
+    <div class="kv mt-md">
+      <div><b class="small">每日学习提醒</b><p class="tiny muted">断签前一天会额外提醒一次</p></div>
+      <label class="switch"><input type="checkbox" checked><i></i></label>
+    </div>
+    <div class="kv">
+      <div><b class="small">提醒时间</b><p class="tiny muted">每天到点提醒一次</p></div>
+      <select class="input" style="width:auto"><option>08:00</option><option selected>20:30</option><option>22:00</option></select>
+    </div>
+    <div class="kv">
+      <div><b class="small">周末不提醒</b><p class="tiny muted">周六周日安静度过</p></div>
+      <label class="switch"><input type="checkbox"><i></i></label>
+    </div>
+  </div>
+
+  <div class="card mt-md">
+    <p class="tiny muted" style="letter-spacing:.2em">提醒渠道</p>
+    <div class="kv mt-md">
+      <div><b class="small">站内消息</b><p class="tiny muted">登录后在消息中心看到</p></div>
+      <label class="switch"><input type="checkbox" checked><i></i></label>
+    </div>
+    <div class="kv">
+      <div><b class="small">浏览器通知</b><p class="tiny muted">需授权浏览器通知权限</p></div>
+      <label class="switch"><input type="checkbox" checked><i></i></label>
+    </div>
+    <div class="kv">
+      <div><b class="small">邮件提醒</b><p class="tiny muted">每周学习周报与断签提醒</p></div>
+      <label class="switch"><input type="checkbox"><i></i></label>
+    </div>
+    <div class="kv">
+      <div><b class="small">移动端系统推送</b><p class="tiny muted">App / PWA 版本（P2）支持</p></div>
+      <span class="mini-phase mini-2">P2</span>
+    </div>
+  </div>
+
+  <div class="card mt-md">
+    <p class="tiny muted" style="letter-spacing:.2em">提醒内容</p>
+    <div class="kv mt-md"><div><b class="small">单词到期提醒</b><label class="switch"><input type="checkbox" checked><i></i></label></div>
+    <div class="kv"><div><b class="small">徽章与成就</b><label class="switch"><input type="checkbox" checked><i></i></label></div>
+    <div class="kv"><div><b class="small">社区互动（赞、评论、关注）</b><label class="switch"><input type="checkbox" checked><i></i></label></div>
+    <div class="kv"><div><b class="small">每周学习周报</b><label class="switch"><input type="checkbox"><i></i></label></div>
+  </div>
+
+  <div class="row gap-md mt-lg">
+    <button class="btn btn-primary" data-mark="已保存提醒设置">保存设置</button>
+    <button class="btn btn-ghost" data-mark="已恢复默认设置">恢复默认</button>
+  </div>
+  <div style="height:40px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

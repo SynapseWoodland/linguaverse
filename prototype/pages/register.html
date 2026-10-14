@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>创建护照 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="m">
+<div style="min-height:100vh;display:grid;grid-template-columns:1fr 1fr">
+  <!-- 左侧深色封皮 -->
+  <div class="cover" style="padding:48px;display:flex;flex-direction:column;justify-content:space-between">
+    <a class="brand" style="color:#ECE8DB" href="landing.html"><span class="brand-mark">L</span>LinguaVerse</a>
+    <div>
+      <div class="rubber stamp-anim" style="--s:130px"><span class="r-main">NEW<br>PASSPORT</span><span class="r-date">2026.10.13</span></div>
+      <h2 class="display mt-lg" style="font-size:38px;color:#F4F1E8;max-width:360px">给自己签发一本语言护照</h2>
+      <p class="muted mt-lg" style="max-width:340px;line-height:1.9">注册后先做 5 分钟定级测试，我们会告诉你该从哪一站上车。</p>
+    </div>
+    <p class="tiny muted">已有护照？<a href="login.html" style="color:#E7AEB4;text-decoration:underline">直接登录</a></p>
+  </div>
+
+  <!-- 右侧表单 -->
+  <div style="display:flex;align-items:center;justify-content:center;padding:48px 28px">
+    <div style="width:100%;max-width:380px">
+      <h1 class="serif-cn" style="font-size:27px">创建账户</h1>
+      <p class="muted small mt-md">用户名和密码都只存在你的服务器上，密码会被加盐加密。</p>
+      <form class="mt-lg" onsubmit="location.href='onboarding.html';return false">
+        <div class="field">
+          <label>用户名</label>
+          <input class="input" placeholder="2–16 位，字母或数字" value="linxiaoye">
+          <span class="hint">这是你登录和在社区显示的名字</span>
+        </div>
+        <div class="field">
+          <label>密码</label>
+          <input class="input" type="password" placeholder="至少 6 位" value="123456">
+          <span class="error-text hide" style="display:flex">✗ 密码至少需要 6 位</span>
+        </div>
+        <div class="field">
+          <label>再输一次密码</label>
+          <input class="input error" type="password" value="12345">
+          <span class="error-text">✗ 两次输入的密码不一致</span>
+        </div>
+        <button class="btn btn-stamp btn-block btn-lg" type="submit">注册并开始</button>
+      </form>
+      <div class="row gap-sm small muted mt-lg" style="align-items:flex-start">
+        <span>◌</span><span>注册即代表同意《用户协议》与《隐私政策》（原型示意，正式版提供完整文本）。</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

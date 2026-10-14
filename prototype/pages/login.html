@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登录 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="m">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px">
+  <div style="width:100%;max-width:420px">
+    <div class="center">
+      <a class="brand" style="justify-content:center;font-size:24px" href="landing.html"><span class="brand-mark">L</span>LinguaVerse</a>
+      <h1 class="serif-cn mt-lg" style="font-size:26px">欢迎回到你的旅程</h1>
+      <p class="muted small mt-md">上次你学到了 L2 第 3 课，连续学习 14 天。</p>
+    </div>
+
+    <!-- 错误态示例（默认展示，便于评审） -->
+    <div class="card mt-lg" style="border-color:rgba(194,69,47,.4);background:rgba(194,69,47,.05)">
+      <p class="small text-stamp" style="font-weight:600">✗ 用户名或密码不正确</p>
+      <p class="tiny muted mt-md">还可以尝试 3 次，之后账户将锁定 10 分钟。</p>
+    </div>
+
+    <form class="card mt-lg" onsubmit="location.href='home.html';return false">
+      <div class="field">
+        <label>用户名</label>
+        <input class="input" value="linxiaoye" autocomplete="username">
+      </div>
+      <div class="field">
+        <label>密码</label>
+        <input class="input error" type="password" value="wrong-pwd" autocomplete="current-password">
+      </div>
+      <div class="row-between mb-md">
+        <label class="row gap-sm small"><input type="checkbox" checked> <span>7 天内保持登录</span></label>
+        <a class="small text-stamp" href="forgot-password.html">忘记密码？</a>
+      </div>
+      <button class="btn btn-primary btn-block btn-lg" type="submit">登录，继续学习</button>
+    </form>
+
+    <p class="small muted center mt-lg">还没有护照？<a href="register.html" style="color:var(--stamp);font-weight:600">免费注册</a></p>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

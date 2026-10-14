@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>写明信片 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="community" data-phase="m">
+<div class="wrap-narrow" style="padding-top:30px">
+  <div class="row-between">
+    <a class="tiny muted" href="community.html">← 草稿箱</a>
+    <span class="tiny muted">发帖即同意社区公约</span>
+  </div>
+  <h1 class="serif-cn mt-md" style="font-size:25px">写一张学习明信片</h1>
+
+  <div class="card mt-lg">
+    <div class="field">
+      <label>标题（选填）</label>
+      <input class="input" placeholder="一句话说清你想分享什么" value="は和が，我终于不纠结了">
+    </div>
+    <div class="field">
+      <label>正文</label>
+      <textarea class="input" rows="8" style="resize:vertical;line-height:1.9">今天用一个下午搞懂了は和が：は是给新朋友递名片，が是老朋友之间直接说事。例句对比一下就通了。还在 L1 打转的朋友别慌，多造句！</textarea>
+      <span class="hint">支持日文、韩文原文直接输入；外语句子会保留原样显示。</span>
+    </div>
+
+    <div class="field">
+      <label>相关语种</label>
+      <div class="row gap-sm">
+        <span class="chip chip-lang-en active">ENGLISH</span>
+        <span class="chip chip-lang-ja active">日本語</span>
+        <span class="chip chip-lang-ko">한국어</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>话题</label>
+      <div class="row gap-sm">
+        <span class="chip active">语法疑问</span>
+        <span class="chip">打卡</span>
+        <span class="chip">学习方法</span>
+        <span class="chip">求组队</span>
+      </div>
+    </div>
+
+    <div class="stamp-card row gap-lg" style="padding:16px;background:var(--paper)">
+      <span style="font-size:24px">▧</span>
+      <div><b class="small">添加配图（可选）</b>
+      <p class="tiny muted mt-md">支持 1 张学习截图或手账照片，上传后可裁剪。</p>
+      <button class="btn btn-ghost btn-sm" style="margin-left:auto" data-mark="原型示意：选择图片">选择图片</button>
+    </div>
+  </div>
+
+  <div class="card mt-md">
+    <p class="tiny muted">发布前确认</p>
+    <label class="row gap-sm small mt-md"><input type="checkbox" checked> <span>不包含隐私信息（手机号、定位、聊天截图等）</span></label>
+    <label class="row gap-sm small mt-md"><input type="checkbox"> <span>同时同步到关注我的人的消息流</span></label>
+  </div>
+
+  <div class="row-between mt-lg">
+    <button class="btn btn-ghost" data-mark="已存入草稿箱">存草稿</button>
+    <a class="btn btn-stamp" href="community.html">发布明信片</a>
+  </div>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

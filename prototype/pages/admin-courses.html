@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>课程内容管理 · LinguaVerse 后台</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="admin" data-nav="courses" data-phase="1">
+<main class="admin-main">
+  <div class="row-between">
+    <h1 class="serif-cn" style="font-size:24px">课程内容管理</h1>
+    <button class="btn btn-stamp btn-sm" data-mark="原型示意：新建课时（四环节编辑器）">＋ 新建课时</button>
+  </div>
+
+  <div class="tabs mt-lg">
+    <button class="active">英语 L1–L3（已上线）</button>
+    <button>日语 L1–L3</button>
+    <button>韩语 L1–L3</button>
+    <button style="color:var(--gold)">L4–L6 框架占位（P1/P2）</button>
+  </div>
+
+  <div class="card mt-lg card-flush" style="padding:0 0 6px">
+    <table class="table">
+      <tr><th>级别 · 单元 · 课时</th><th>词汇/语法/听/说</th><th>状态</th><th>更新时间</th><th style="width:180px">操作</th></tr>
+      <tr>
+        <td><b class="small">L2 · U1 · 第 3 课《At the Coffee Shop》</b></td>
+        <td class="tiny muted">8 词 · 8 题 · 1 段对话 · 5 跟读</td>
+        <td><span class="chip" style="border-color:var(--ok);color:var(--ok)">已上线</span></td>
+        <td class="tiny muted">10-10</td>
+        <td class="small row gap-sm"><button class="btn btn-ghost btn-sm" data-mark="原型示意：课时编辑器">编辑</button><button class="btn btn-ghost btn-sm" data-mark="原型示意：查看学习数据">数据</button></td>
+      </tr>
+      <tr>
+        <td><b class="small">L2 · U1 · 第 4 课《On the Street》</b></td>
+        <td class="tiny muted">8 词 · 8 题 · 1 段对话 · 5 跟读</td>
+        <td><span class="chip" style="border-color:var(--ok);color:var(--ok)">已上线</span></td>
+        <td class="tiny muted">10-11</td>
+        <td class="small row gap-sm"><button class="btn btn-ghost btn-sm" data-mark="原型示意：课时编辑器">编辑</button><button class="btn btn-ghost btn-sm" data-mark="原型示意：查看学习数据">数据</button></td>
+      </tr>
+      <tr>
+        <td><b class="small">L3 · U2 · 第 1 课《影评：一部老电影》</b></td>
+        <td class="tiny muted">12 词 · 10 题 · 2 段材料 · 6 跟读</td>
+        <td><span class="chip" style="border-color:var(--gold);color:var(--gold)">待发布 · 已审校</span></td>
+        <td class="tiny muted">今天 11:20</td>
+        <td class="small row gap-sm"><button class="btn btn-ghost btn-sm">预览</button><button class="btn btn-stamp btn-sm" data-mark="原型示意：发布后对已解锁用户可见">发布</button></td>
+      </tr>
+      <tr>
+        <td><b class="small">L4 · U1 · 框架占位《新闻精读》</b></td>
+        <td class="tiny muted">语料结构已建 · 待 P1 排期</td>
+        <td><span class="chip">框架占位</span></td>
+        <td class="tiny muted">—</td>
+        <td class="small row gap-sm"><button class="btn btn-ghost btn-sm" data-mark="P1 排期">编辑框架</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px">
+    <div class="card">
+      <p class="tiny muted" style="letter-spacing:.2em">课时完成数据（L2 第 3 课）</p>
+      <div class="grid mt-md" style="grid-template-columns:repeat(4,1fr);gap:10px" class="tiny">
+        <div><b class="serif-cn">3,412</b><p class="tiny muted">进入人数</p></div>
+        <div><b class="serif-cn text-ok">2,980</b><p class="tiny muted">完成人数</p></div>
+        <div><b class="serif-cn text-stamp">87%</b><p class="tiny muted">完成率</p></div>
+        <div><b class="serif-cn text-gold">42%</b><p class="tiny muted">听力环节流失</p></div>
+      </div>
+      <p class="tiny muted mt-md">听力环节流失最高，可在 P1 复查语速与盲听难度。</p>
+    </div>
+    <div class="card">
+      <p class="tiny muted" style="letter-spacing:.2em">发布规则</p>
+      <ul class="tiny muted mt-md col gap-sm" style="line-height:1.8;padding-left:18px">
+        <li>题目答案仅存服务端，不在任何下发数据中出现。</li>
+        <li>新课时只对已按顺序解锁到该课的用户开放。</li>
+        <li>修改已上线课时保留旧记录，变更记录可追溯（P1 审计日志）。</li>
+        <li>真实语料需标注来源与版权信息。</li>
+      </ul>
+    </div>
+  </div>
+  <p style="height:30px"></p>
+</main>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>徽章明信片 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="achievements" data-phase="1">
+<div style="max-width:760px;margin:0 auto;padding:36px 22px 70px">
+  <a class="tiny muted" href="achievements.html">← 返回成就墙</a>
+  <h1 class="serif-cn mt-md" style="font-size:25px">把徽章做成明信片</h1>
+
+  <!-- 明信片本体 -->
+  <div class="mt-lg" style="display:grid;grid-template-columns:1.1fr .9fr;background:var(--card);border:var(--hairline);box-shadow:var(--shadow-lift);border-radius:var(--r-md);overflow:hidden;min-height:380px">
+    <!-- 左：图面 -->
+    <div class="cover" style="padding:34px;display:flex;flex-direction:column;justify-content:space-between;position:relative">
+      <div class="brand" style="color:#ECE8DB;font-size:17px"><span class="brand-mark">L</span>LinguaVerse</div>
+      <div>
+        <div class="rubber stamp-anim" style="--s:120px"><span class="r-main">15<br>DAYS</span><span class="r-date">10.13.2026</span></div>
+        <p class="display mt-lg" style="font-size:30px;color:#F4F1E8">连续学习 15 天</p>
+        <p class="muted small mt-md">徽章「半月之约」· 英语 L2 · 日语 L2 双修中</p>
+      </div>
+      <p class="tiny muted">@linxiaoye 的语言护照</p>
+    </div>
+    <!-- 右：地址面 -->
+    <div style="padding:28px;background-image:linear-gradient(rgba(27,42,61,.06) 1px,transparent 1px);background-size:100% 34px;position:relative">
+      <p class="tiny muted" style="letter-spacing:.25em">POSTCARD</p>
+      <p class="small mt-lg" style="line-height:1.9;min-height:150px">今天盖上第 15 枚章啦！从 Good morning 一路学到点拿铁，日语也在车站买过票了。下一站：连续 30 天 ✦</p>
+      <div style="position:absolute;right:22px;top:70px;transform:rotate(8deg)"><div class="rubber sm" style="--s:62px"><span class="r-main">POST</span><span class="r-date">2026.10.13</span></div></div>
+      <div style="border-top:1px solid var(--ink-soft);margin-top:26px;padding-top:10px" class="tiny muted">
+        <div class="kv"><b>学习天数</b><span>15 天</span></div>
+        <div class="kv"><b>掌握单词</b><span>404 个</span></div>
+        <div class="kv"><b>当前等级</b><span>英语 L2 / 日语 L2</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-lg">
+    <p class="tiny muted">分享设置</p>
+    <div class="row gap-sm mt-md" style="flex-wrap:wrap">
+      <span class="chip active">显示昵称</span><span class="chip">匿名显示</span><span class="chip">显示具体数据</span><span class="chip">只显示徽章</span>
+    </div>
+    <div class="row gap-md mt-lg" style="flex-wrap:wrap">
+      <button class="btn btn-stamp" data-mark="明信片已复制为图片（P1 功能）">保存为图片</button>
+      <button class="btn btn-ghost" data-mark="原型示意：生成分享链接">复制分享链接</button>
+      <button class="btn btn-ghost" data-mark="原型示意：系统分享面板">分享给好友</button>
+    </div>
+    <p class="tiny muted mt-md">分享出去的卡片只含你勾选的信息，不包含邮箱、手机号等隐私。</p>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

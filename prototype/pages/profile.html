@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人资料 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="dashboard" data-phase="m">
+<div class="wrap-narrow" style="padding-top:30px">
+  <h1 class="serif-cn" style="font-size:27px">个人资料</h1>
+  <p class="muted small mt-md">这些信息会出现在你的护照页和社区明信片上。</p>
+
+  <div class="card mt-lg">
+    <div class="row gap-lg" style="flex-wrap:wrap">
+      <span class="avatar" style="width:72px;height:72px;font-size:28px">林</span>
+      <div>
+        <button class="btn btn-ghost btn-sm" data-mark="原型示意：选择头像">更换头像</button>
+        <p class="tiny muted mt-md">支持 JPG/PNG，建议正方形，会自动裁剪。</p>
+      </div>
+    </div>
+    <div class="field mt-lg">
+      <label>昵称</label>
+      <input class="input" value="林小野">
+      <span class="hint">2–16 位；社区展示名，30 天内只能改一次（P1 规则）。</span>
+    </div>
+    <div class="field">
+      <label>个人简介</label>
+      <textarea class="input" rows="3" style="resize:vertical">目标：三年内能无字幕看完一部日剧。英语 L2 / 日语 L2 双修中。</textarea>
+    </div>
+    <div class="field">
+      <label>正在学习</label>
+      <div class="row gap-sm">
+        <span class="chip chip-lang-en active">ENGLISH</span>
+        <span class="chip chip-lang-ja active">日本語</span>
+        <span class="chip chip-lang-ko">한국어（去课程中心开启）</span>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-mark="资料已保存">保存资料</button>
+  </div>
+
+  <div class="card mt-md">
+    <p class="tiny muted" style="letter-spacing:.2em">设置入口</p>
+    <a class="kv" href="daily-goal.html"><b class="small">每日目标</b><span class="muted tiny">30 XP / 天 →</span></a>
+    <a class="kv" href="notification-settings.html"><b class="small">提醒设置</b><span class="muted tiny">每日 20:30 · 浏览器通知 →</span></a>
+    <a class="kv" href="account-security.html"><b class="small">账户与安全</b><span class="muted tiny">密码、邮箱、注销 →</span></a>
+    <a class="kv" href="membership.html"><b class="small">会员订阅</b><span class="tiny text-gold">免费版 →</span></a>
+    <a class="kv" href="download-app.html"><b class="small">下载 App</b><span class="muted tiny">移动端 / PWA →</span></a>
+  </div>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

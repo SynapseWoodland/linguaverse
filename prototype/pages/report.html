@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>举报 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="1">
+<div class="modal-mask open" style="position:fixed;display:flex">
+  <div class="modal">
+    <div class="row-between">
+      <h2 class="serif-cn" style="font-size:20px">举报这条内容</h2>
+      <a class="tiny muted" href="community.html">✕ 关闭</a>
+    </div>
+    <p class="small muted mt-md">举报匿名提交，对方不会知道是谁举报。审核通常在 24 小时内处理，违规内容会被隐藏或删除。</p>
+
+    <div class="card mt-lg" style="padding:14px 16px;background:var(--paper)">
+      <p class="tiny muted">被举报内容</p>
+      <p class="small mt-md">樱芽めい：「今天终于搞懂は和が的区别了！…」（示例）</p>
+    </div>
+
+    <div class="mt-lg col gap-sm">
+      <label class="row gap-sm stamp-card" style="padding:13px 16px;cursor:pointer"><input type="radio" name="r" checked> <span class="small">垃圾广告或引流</span></label>
+      <label class="row gap-sm stamp-card" style="padding:13px 16px;cursor:pointer"><input type="radio" name="r"> <span class="small">辱骂、骚扰或人身攻击</span></label>
+      <label class="row gap-sm stamp-card" style="padding:13px 16px;cursor:pointer"><input type="radio" name="r"> <span class="small">含不当内容（色情、暴力、违法）</span></label>
+      <label class="row gap-sm stamp-card" style="padding:13px 16px;cursor:pointer"><input type="radio" name="r"> <span class="small">侵权或冒充他人</span></label>
+      <label class="row gap-sm stamp-card" style="padding:13px 16px;cursor:pointer"><input type="radio" name="r"> <span class="small">其他（在下方说明）</span></label>
+    </div>
+
+    <div class="field mt-lg">
+      <label>补充说明（选填）</label>
+      <textarea class="input" rows="3" placeholder="告诉审核同学你认为有问题的地方…"></textarea>
+    </div>
+
+    <label class="row gap-sm small"><input type="checkbox"> <span>同时屏蔽该用户，不再看到 TA 的内容与私信</span></label>
+
+    <div class="row gap-md mt-lg">
+      <a class="btn btn-ghost" href="community.html">取消</a>
+      <button class="btn btn-danger" style="margin-left:auto" data-mark="已提交举报，审核将在 24 小时内处理">提交举报</button>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

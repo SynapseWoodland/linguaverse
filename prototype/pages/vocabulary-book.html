@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生词本 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="courses" data-phase="1">
+<div class="wrap" style="padding-top:32px;max-width:960px">
+  <div class="row-between" style="flex-wrap:wrap;gap:12px">
+    <div>
+      <h1 class="serif-cn" style="font-size:28px">生词本</h1>
+      <p class="muted small mt-md">所有闪卡里标记过的词都收在这里，共 64 词。</p>
+    </div>
+    <a class="btn btn-stamp btn-sm" href="flashcards.html">复习全部到期（12）→</a>
+  </div>
+
+  <div class="row gap-sm mt-lg" style="flex-wrap:wrap">
+    <span class="chip chip-lang-en active">英语 42</span>
+    <span class="chip chip-lang-ja active">日本語 22</span>
+    <span class="chip">한국어 0</span>
+    <span style="width:1px;height:22px;background:var(--thread);margin:0 6px"></span>
+    <span class="chip active">全部记忆阶段</span>
+    <span class="chip">学习中 31</span>
+    <span class="chip">已掌握 26</span>
+    <span class="chip">已收藏 ⭐ 7</span>
+  </div>
+
+  <div class="card mt-lg card-flush" style="padding:0 0 8px">
+    <table class="table">
+      <tr><th>单词</th><th>释义</th><th>记忆阶段</th><th>下次复习</th><th style="width:110px"></th></tr>
+      <tr>
+        <td><b class="serif">receipt</b><br><span class="tiny muted">/rɪˈsiːt/</span></td>
+        <td class="small">小票；收据</td>
+        <td><span class="chip" style="border-color:var(--stamp);color:var(--stamp)">阶段 0 · 新</span></td>
+        <td class="small text-stamp">今天</td>
+        <td><button class="btn btn-ghost btn-sm" data-play>▶</button></td>
+      </tr>
+      <tr>
+        <td><b class="serif">to go</b></td>
+        <td class="small">（点单）外带</td>
+        <td><span class="chip" style="border-color:var(--stamp);color:var(--stamp)">阶段 1</span></td>
+        <td class="small text-stamp">今天</td>
+        <td><button class="btn btn-ghost btn-sm" data-play>▶</button></td>
+      </tr>
+      <tr>
+        <td><b class="serif" style="font-family:'Noto Sans JP',serif">改札（かいさつ）</b></td>
+        <td class="small">检票；检票口</td>
+        <td><span class="chip" style="border-color:var(--gold);color:var(--gold)">阶段 2 · 模糊</span></td>
+        <td class="small">明天</td>
+        <td><button class="btn btn-ghost btn-sm" data-play>▶</button></td>
+      </tr>
+      <tr>
+        <td><b class="serif">latte</b><br><span class="tiny muted">/ˈlɑːteɪ/</span></td>
+        <td class="small">拿铁</td>
+        <td><span class="chip" style="border-color:var(--ok);color:var(--ok)">阶段 3 · 认识</span></td>
+        <td class="small">3 天后</td>
+        <td><button class="btn btn-ghost btn-sm" data-play>▶</button></td>
+      </tr>
+      <tr>
+        <td><b class="serif" style="font-family:'Noto Sans JP',serif">切符（きっぷ）</b></td>
+        <td class="small">车票</td>
+        <td><span class="chip" style="border-color:var(--ok);color:var(--ok)">阶段 3</span></td>
+        <td class="small">3 天后</td>
+        <td><button class="btn btn-ghost btn-sm" data-play>▶</button></td>
+      </tr>
+      <tr>
+        <td><b class="serif">order</b></td>
+        <td class="small">点餐；订单</td>
+        <td><span class="chip text-ok" style="border-color:var(--ok)">已掌握</span></td>
+        <td class="small muted">7 天后</td>
+        <td><button class="btn btn-ghost btn-sm" data-play>▶</button></td>
+      </tr>
+    </table>
+  </div>
+  <div class="row-between mt-lg tiny muted"><span>记忆阶段由闪卡三档评价自动推进（SRS-lite）</span><span>查看曲线 → <a href="forgetting-curve.html" class="text-stamp">遗忘曲线</a></span></div>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

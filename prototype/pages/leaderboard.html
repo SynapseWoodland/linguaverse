@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>排行榜 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="achievements" data-phase="1">
+<div class="wrap-narrow" style="padding-top:32px">
+  <h1 class="serif-cn" style="font-size:28px">排行榜</h1>
+  <div class="tabs mt-lg">
+    <button class="active">本周好友</button>
+    <button>本周全站</button>
+    <button class="chip chip-lang-ja active" style="margin-left:auto">日本語榜</button>
+  </div>
+
+  <!-- 领奖台 -->
+  <div class="grid mt-xl" style="grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:end">
+    <div class="card center" style="padding:18px 10px"><div class="avatar ja" style="margin:0 auto">芽</div><p class="small mt-md"><b>樱芽めい</b></p><div class="display text-gold" style="font-size:24px">412</div><p class="tiny muted">XP · 2</p></div>
+    <div class="card center" style="padding:26px 10px;border:2px solid var(--gold)"><span class="tiny text-gold" style="font-weight:700">本周冠军</span><div class="avatar gold" style="margin:8px auto 0;width:52px;height:52px">★</div><p class="small mt-md"><b>桥本太太</b></p><div class="display text-gold" style="font-size:28px">536</div><p class="tiny muted">XP · 1</p></div>
+    <div class="card center" style="padding:18px 10px"><div class="avatar ko" style="margin:0 auto">俊</div><p class="small mt-md"><b>俊介君</b></div><div class="display" style="font-size:24px;color:var(--passport)">388</div><p class="tiny muted">XP · 3</p></div>
+  </div>
+
+  <!-- 列表，自己高亮 -->
+  <div class="card mt-xl card-flush" style="padding:0 0 6px">
+    <table class="table">
+      <tr><th style="width:54px">名次</th><th>学习者</th><th>本周 XP</th><th style="width:90px">连续</th></tr>
+      <tr><td>1</td><td><div class="row gap-md"><span class="avatar gold sm" style="width:26px;height:26px;font-size:11px">★</span><b class="small">桥本太太</b></div></td><td class="small text-gold"><b>536</b></td><td class="small">42 天</td></tr>
+      <tr><td>2</td><td><div class="row gap-md"><span class="avatar ja sm" style="width:26px;height:26px;font-size:11px">芽</span><b class="small">樱芽めい</b></div></td><td class="small">412</td><td class="small">18 天</td></tr>
+      <tr><td>3</td><td><div class="row gap-md"><span class="avatar ko sm" style="width:26px;height:26px;font-size:11px">俊</span><b class="small">俊介君</b></div></td><td class="small">388</td><td class="small">9 天</td></tr>
+      <tr style="background:rgba(40,69,110,.06)"><td><b>6</b></td><td><div class="row gap-md"><span class="avatar sm" style="width:26px;height:26px;font-size:11px">林</span><b class="small">林小野（你）</b></div></td><td class="small text-stamp"><b>268</b></td><td class="small">15 天</td></tr>
+      <tr><td>7</td><td><div class="row gap-md"><span class="avatar sm" style="width:26px;height:26px;font-size:11px;background:#8a93a0">朝</span><b class="small">朝日奈</b></div></td><td class="small">241</td><td class="small">6 天</td></tr>
+      <tr><td>8</td><td><div class="row gap-md"><span class="avatar sm" style="width:26px;height:26px;font-size:11px;background:#8a93a0">鱼</span><b class="small">鱼干子</b></div></td><td class="small">203</td><td class="small">4 天</td></tr>
+    </table>
+  </div>
+  <p class="tiny muted center mt-lg">榜单只按本周学习 XP 排名，不含消费金额；不想上榜可在隐私设置中匿名。</p>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

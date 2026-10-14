@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>复习中心 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="review" data-phase="m">
+<div class="wrap" style="padding-top:32px;max-width:960px">
+  <h1 class="serif-cn" style="font-size:28px">复习中心</h1>
+  <p class="muted small mt-md">系统按遗忘曲线把到期内容排队等你。复习用的闪卡和课时里一样，三档决定下次时间。</p>
+
+  <!-- 总览条 -->
+  <div class="grid mt-xl" style="grid-template-columns:repeat(4,1fr);gap:16px">
+    <div class="stamp-card center">
+      <div class="display text-stamp" style="font-size:32px">12</div>
+      <p class="tiny muted mt-md">今天到期 · 词</p>
+    </div>
+    <div class="stamp-card center">
+      <div class="display text-gold" style="font-size:32px">7</div>
+      <p class="tiny muted mt-md">已逾期 · 建议优先</p>
+    </div>
+    <div class="stamp-card center">
+      <div class="display" style="font-size:32px;color:var(--ok)">136</div>
+      <p class="tiny muted mt-md">仍在记忆周期中</p>
+    </div>
+    <div class="stamp-card center">
+      <div class="display" style="font-size:32px;color:var(--passport)">≈6′</div>
+      <p class="tiny muted mt-md">清完今日队列用时</p>
+    </div>
+  </div>
+
+  <!-- 分语种队列 -->
+  <h2 class="serif-cn mt-xl" style="font-size:20px">各语种到期队列</h2>
+  <div class="col mt-lg gap-md">
+    <a class="stamp-card row gap-lg" href="flashcards.html">
+      <span class="rubber" style="--s:60px;flex:none;color:var(--lang-en)"><span class="r-main">EN</span><span class="r-date">8 WORDS</span></span>
+      <div style="flex:1"><b class="small">英语 · 8 个到期</b><p class="tiny muted mt-md">order · size · receipt · to go · medium… 5 个已逾期</p></div>
+      <span class="text-stamp">开始复习 →</span>
+    </a>
+    <a class="stamp-card row gap-lg" href="flashcards.html">
+      <span class="rubber" style="--s:60px;flex:none;color:var(--lang-ja)"><span class="r-main">日</span><span class="r-date">4 WORDS</span></span>
+      <div style="flex:1"><b class="small">日语 · 4 个到期</b><p class="tiny muted mt-md">切符（きっぷ）· 改札（かいさつ）… 全部今天到期</p></div>
+      <span class="text-stamp">开始复习 →</span>
+    </a>
+    <div class="stamp-card row gap-lg" style="opacity:.6">
+      <span class="rubber muted-stamp" style="--s:60px;flex:none"><span class="r-main">한</span></span>
+      <div style="flex:1"><b class="small">韩语 · 暂无到期内容</b><p class="tiny muted mt-md">开始韩语学习后，这里会出现复习队列。</p></div>
+      <a class="tiny muted" href="courses.html">去看看 →</a>
+    </div>
+  </div>
+
+  <!-- 薄弱项建议 -->
+  <h2 class="serif-cn mt-xl" style="font-size:20px">薄弱模块建议</h2>
+  <div class="grid mt-lg" style="grid-template-columns:repeat(3,1fr);gap:16px">
+    <a class="card" href="grammar.html"><p class="tiny muted">语法 · 本周正确率</p><div class="display text-stamp mt-md" style="font-size:28px">61%</div><p class="tiny muted mt-md">建议练一组「て形 / Can I have」</p></a>
+    <a class="card" href="listening.html"><p class="tiny muted">听力 · 常速听辨</p><div class="display text-gold mt-md" style="font-size:28px">72%</div><p class="tiny muted mt-md">建议精听 L2 咖啡店对话</p></a>
+    <a class="card" href="speaking.html"><p class="tiny muted">口语 · 语调</p><div class="display mt-md" style="font-size:28px;color:var(--ok)">83%</div><p class="tiny muted mt-md">保持每天跟读 5 句即可</p></a>
+  </div>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

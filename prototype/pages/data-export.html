@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据导出 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="dashboard" data-phase="2">
+<div class="wrap-narrow" style="padding-top:32px">
+  <a class="tiny muted" href="dashboard.html">← 返回仪表盘</a>
+  <h1 class="serif-cn mt-md" style="font-size:26px">导出我的学习数据</h1>
+  <p class="muted small mt-md">你的学习记录属于你。选择需要的内容生成导出文件，文件会打包成 ZIP 并提供一次性下载链接。</p>
+
+  <div class="card mt-lg">
+    <p class="tiny muted" style="letter-spacing:.2em">导出内容（可多选）</p>
+    <div class="kv mt-md"><div><b class="small">个人资料与账户信息</b><p class="tiny muted">昵称、注册时间、语种偏好</p></div><label class="switch"><input type="checkbox" checked><i></i></label></div>
+    <div class="kv"><div><b class="small">学习记录</b><p class="tiny muted">课时、XP、连续天数、每日学习明细</p></div><label class="switch"><input type="checkbox" checked><i></i></label></div>
+    <div class="kv"><div><b class="small">词汇与记忆阶段</b><p class="tiny muted">全部生词本及 SRS 阶段</p></div><label class="switch"><input type="checkbox" checked><i></i></label></div>
+    <div class="kv"><div><b class="small">成就与证书</b><p class="tiny muted">徽章、称号、证书记录</p></div><label class="switch"><input type="checkbox" checked><i></i></label></div>
+    <div class="kv"><div><b class="small">社区内容</b><p class="tiny muted">你发布的帖子、评论与私信</p></div><label class="switch"><input type="checkbox"><i></i></label></div>
+  </div>
+
+  <div class="card mt-md">
+    <p class="tiny muted" style="letter-spacing:.2em">导出格式</p>
+    <div class="row gap-sm mt-md">
+      <span class="chip active">JSON（结构化，方便迁移）</span>
+      <span class="chip">CSV（表格，可用 Excel 打开）</span>
+    </div>
+  </div>
+
+  <!-- 已生成示例 -->
+  <div class="stamp-card mt-lg row gap-lg">
+    <span class="rubber ink sm" style="--s:52px;flex:none"><span class="r-main">ZIP</span></span>
+    <div style="flex:1"><b class="small">linguaverse-data-20261013.zip</b><p class="tiny muted mt-md">2.4 MB · 链接 24 小时内有效，只能用你的账户下载</p></div>
+    <button class="btn btn-primary btn-sm" data-mark="原型示意：开始下载">下载</button>
+  </div>
+
+  <div class="row gap-md mt-lg">
+    <button class="btn btn-stamp" data-mark="正在生成导出文件（P2 功能）…">生成导出文件</button>
+    <a class="btn btn-ghost" href="account-security.html">了解数据与账户注销</a>
+  </div>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

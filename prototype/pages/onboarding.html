@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>启程 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="m">
+<div style="max-width:820px;margin:0 auto;padding:40px 24px 80px">
+  <div class="center">
+    <div class="brand" style="justify-content:center;font-size:22px"><span class="brand-mark">L</span>LinguaVerse</div>
+    <div class="route mt-lg" style="justify-content:center">
+      <span class="stop"><span class="dot done">✦</span><span class="tiny muted">欢迎</span></span>
+      <span class="line done"></span>
+      <span class="stop"><span class="dot current">地</span><span class="tiny">选语种</span></span>
+      <span class="line"></span>
+      <span class="stop"><span class="dot">测</span><span class="tiny muted">怎么开始</span></span>
+    </div>
+  </div>
+
+  <!-- Step 1 -->
+  <section class="card mt-xl">
+    <div class="center">
+      <p class="serif-cn muted tiny" style="letter-spacing:.3em">第一步 · 欢迎</p>
+      <h1 class="display serif-cn" style="font-size:34px;margin-top:10px">你的语言旅程，从这里检票</h1>
+      <p class="muted mt-md" style="max-width:520px;margin-inline:auto;line-height:1.9">接下来两件事：挑一个你最想去的国度，再决定是先做定级测试还是直接从 L1 出发。全程不到 5 分钟。</p>
+      <div class="mt-lg"><button class="btn btn-primary btn-lg" data-tab="1" onclick="document.querySelector('[data-tabs]')">好，开始选语种</button></div>
+    </div>
+  </section>
+
+  <div class="mt-xl" data-tabs="#onb-panels">
+    <div class="tabs hide" style="display:none">
+      <button data-tab="0">1</button><button data-tab="1">2</button><button data-tab="2">3</button>
+    </div>
+  </div>
+
+  <div id="onb-panels">
+  <!-- Step 2 -->
+  <section>
+    <p class="serif-cn muted tiny" style="letter-spacing:.3em">第二步 · 选择首个目的地</p>
+    <h2 class="serif-cn mt-md" style="font-size:24px">你最想先学哪一门语言？</h2>
+    <p class="small muted mt-md">先选一个主修语种，以后随时可以在课程中心加入另外两门。</p>
+    <div class="grid mt-lg" style="grid-template-columns:repeat(3,1fr);gap:18px">
+      <div class="stamp-card" style="border:2px solid var(--lang-en);cursor:pointer">
+        <div class="rubber ink" style="--s:76px;margin:0 auto"><span class="r-main">ENGLISH</span><span class="r-date">英语</span></div>
+        <h3 class="serif-cn center mt-md">英语</h3>
+        <p class="tiny muted center mt-md">使用最广的旅途通用语</p>
+        <p class="tiny center mt-md" style="color:var(--lang-en);font-weight:700">已选择 ✓</p>
+      </div>
+      <div class="stamp-card" style="cursor:pointer">
+        <div class="rubber" style="--s:76px;margin:0 auto;color:var(--lang-ja)"><span class="r-main">日本語</span><span class="r-date">日语</span></div>
+        <h3 class="serif-cn center mt-md">日语</h3>
+        <p class="tiny muted center mt-md">从假名到动漫日剧</p>
+      </div>
+      <div class="stamp-card" style="cursor:pointer">
+        <div class="rubber" style="--s:76px;margin:0 auto;color:var(--lang-ko)"><span class="r-main">한국어</span><span class="r-date">韩语</span></div>
+        <h3 class="serif-cn center mt-md">韩语</h3>
+        <p class="tiny muted center mt-md">从韩文字母到追星刷剧</p>
+      </div>
+    </div>
+    <div class="row-between mt-xl">
+      <button class="btn btn-ghost" data-tab="0">返回</button>
+      <button class="btn btn-primary btn-lg" data-tab="2">下一步：怎么开始</button>
+    </div>
+  </section>
+
+  <!-- Step 3 -->
+  <section class="hide">
+    <p class="serif-cn muted tiny" style="letter-spacing:.3em">第三步 · 决定上车方式</p>
+    <h2 class="serif-cn mt-md" style="font-size:24px">想先知道自己的水平吗？</h2>
+    <div class="grid mt-lg" style="grid-template-columns:1fr 1fr;gap:18px">
+      <div class="stamp-card" style="border:2px solid var(--stamp)">
+        <span class="rubber" style="--s:70px"><span class="r-main">TEST</span><span class="r-date">5 MIN</span></span>
+        <h3 class="serif-cn mt-md">做定级测试（推荐）</h3>
+        <p class="small muted mt-md">10 道词汇与语法小题，5 分钟。完成后我们建议你从最合适的级别开始，不浪费时间在已经会的内容上。</p>
+        <a class="btn btn-stamp btn-block mt-lg" href="placement.html">开始定级测试</a>
+      </div>
+      <div class="stamp-card">
+        <span class="rubber ink" style="--s:70px"><span class="r-main">START</span><span class="r-date">L1</span></span>
+        <h3 class="serif-cn mt-md">从 L1 直接开始</h3>
+        <p class="small muted mt-md">零基础或想打牢基础？直接进入入门第一课，从字母、发音和第一句问候学起。</p>
+        <a class="btn btn-ghost btn-block mt-lg" href="lesson.html">进入 L1 第一课</a>
+      </div>
+    </div>
+    <div class="center mt-lg">
+      <a href="home.html" class="small muted">稍后再决定，先去首页看看</a>
+    </div>
+  </section>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

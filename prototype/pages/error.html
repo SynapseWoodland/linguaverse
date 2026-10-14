@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>连接异常 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="m">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px;text-align:center">
+  <div style="max-width:440px">
+    <div style="font-size:54px">✉︎</div>
+    <h1 class="serif-cn mt-md" style="font-size:27px">暂时连不上学习服务器</h1>
+    <p class="muted mt-md">你的学习记录都保存在服务器上，不会因为这次断线丢失。请检查网络后重试；如果多次出现同样问题，可以稍后再来。</p>
+    <div class="card mt-lg small" style="text-align:left">
+      <div class="kv"><b>错误代码</b><span class="mono">ERR_NETWORK_UNREACHABLE</span></div>
+      <div class="kv"><b>发生时间</b><span>2026-10-13 14:22</span></div>
+      <div class="kv"><b>建议</b><span>检查网络 / 稍后重试</span></div>
+    </div>
+    <div class="row gap-md mt-xl" style="justify-content:center">
+      <button class="btn btn-stamp btn-lg" onclick="lvToast('正在重新连接…')">重新连接</button>
+      <a class="btn btn-ghost btn-lg" href="home.html">先回首页</a>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

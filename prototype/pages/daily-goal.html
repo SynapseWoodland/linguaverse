@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日目标 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="dashboard" data-phase="m">
+<div class="wrap-narrow" style="padding-top:30px">
+  <h1 class="serif-cn" style="font-size:27px">每日目标</h1>
+  <p class="muted small mt-md">目标不是压力。选一个每天能轻松完成的量，完成当天就盖章。</p>
+
+  <div class="grid mt-xl" style="grid-template-columns:repeat(4,1fr);gap:14px">
+    <button class="stamp-card" data-mark="已选择轻松档">
+      <div class="display muted-stamp" style="font-size:28px;color:var(--muted)">10</div>
+      <p class="small mt-md">轻松</p>
+      <p class="tiny muted mt-md">约 5 分钟 · 6 词或 3 题</p>
+    </button>
+    <button class="stamp-card" style="border:2px solid var(--stamp)" data-mark="已选择标准档">
+      <div class="display text-stamp" style="font-size:28px">30</div>
+      <p class="small mt-md" style="font-weight:700">标准（当前）</p>
+      <p class="tiny muted mt-md">约 10–15 分钟 · 半节课</p>
+      <span class="text-stamp tiny">✓ 已选</span>
+    </button>
+    <button class="stamp-card" data-mark="已选择进阶档">
+      <div class="display" style="font-size:28px;color:var(--passport)">60</div>
+      <p class="small mt-md">进阶</p>
+      <p class="tiny muted mt-md">约 25 分钟 · 完整一课</p>
+    </button>
+    <button class="stamp-card" data-mark="已选择疯狂档">
+      <div class="display text-gold" style="font-size:28px">100</div>
+      <p class="small mt-md">冲刺</p>
+      <p class="tiny muted mt-md">约 40 分钟 · 两课+复习</p>
+    </button>
+  </div>
+
+  <div class="card mt-xl">
+    <p class="tiny muted" style="letter-spacing:.2em">目标达成情况（近 14 天）</p>
+    <div class="row mt-lg" style="gap:4px;flex-wrap:wrap" id="goal-dots"></div>
+    <p class="tiny muted mt-lg">14 天里 13 天达成 · 达成率 93%。连续断一天也没关系，新的一天重新盖章。</p>
+  </div>
+
+  <button class="btn btn-primary btn-block mt-lg" data-mark="每日目标已保存">保存目标：30 XP</button>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js">
+document.addEventListener('DOMContentLoaded',function(){
+  const box=document.getElementById('goal-dots');let h='';
+  for(let i=0;i<14;i++){const done=i!==9;h+=`<span title="${i+1}日" style="width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:11px;color:#fff;background:${done?'var(--passport)':'var(--paper-deep)'};color:${done?'#fff':'var(--muted)'}">${done?'✦':'–'}</span>`;}
+  box.innerHTML=h;
+});
+</script>
+</body>
+</html>

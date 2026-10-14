@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>班级 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="app" data-nav="dashboard" data-phase="2">
+<div class="wrap" style="padding-top:32px;max-width:980px">
+  <div class="row-between" style="flex-wrap:wrap;gap:12px">
+    <div>
+      <span class="mini-phase mini-2">P2 规划</span>
+      <h1 class="serif-cn mt-md" style="font-size:27px">我的班级</h1>
+      <p class="muted small mt-md">老师可按班级布置课时、查看完成率；学生在这里看作业和截止时间。</p>
+    </div>
+    <button class="btn btn-stamp btn-sm" data-mark="原型示意：创建/加入班级">＋ 创建班级 / 用邀请码加入</button>
+  </div>
+
+  <!-- 学生身份卡 -->
+  <div class="grid mt-xl" style="grid-template-columns:repeat(3,1fr);gap:16px">
+    <div class="stamp-card">
+      <div class="row-between"><span class="chip chip-lang-en active">ENGLISH</span><span class="tiny muted">我是学生</span></div>
+      <h3 class="serif-cn mt-md" style="font-size:18px">大学英语二·3 班</h3>
+      <p class="tiny muted mt-md">老师：王老师 · 邀请码 LV-EN203</p>
+      <div class="kv tiny mt-md"><span class="muted">本周作业</span><b>L2 U1 全部课时</b></div>
+      <div class="kv tiny"><span class="muted">截止时间</span><b class="text-stamp">10.16 周五 23:59</b></div>
+      <div class="bar mt-md"><i class="stamp-fill" style="width:50%"></i></div>
+      <p class="tiny muted mt-md">你已完成 2/4 环节</p>
+    </div>
+    <div class="stamp-card">
+      <div class="row-between"><span class="chip chip-lang-ja active">日本語</span><span class="tiny muted">我是学生</span></div>
+      <h3 class="serif-cn mt-md" style="font-size:18px">日语兴趣社·初级</h3>
+      <p class="tiny muted mt-md">社长：樱芽めい · 32 人</p>
+      <div class="kv tiny mt-md"><span class="muted">本周任务</span><b>50 个词复习 + 1 课</b></div>
+      <div class="kv tiny"><span class="muted">完成率</span><b style="color:var(--ok)">100%</b></div>
+      <div class="bar mt-md"><i class="ko-fill" style="width:100%"></i></div>
+      <p class="tiny text-ok mt-md">本周已盖章 ✓</p>
+    </div>
+    <div class="stamp-card">
+      <div class="row-between"><span class="chip active">我是老师</span><span class="tiny muted">教师视图</span></div>
+      <h3 class="serif-cn mt-md" style="font-size:18px">企业日语入门·1 班</h3>
+      <p class="tiny muted mt-md">18 名学员 · 本周作业已布置</p>
+      <div class="kv tiny mt-md"><span class="muted">已交</span><b>12 / 18</b></div>
+      <div class="bar mt-md"><i style="width:67%"></i></div>
+      <a class="small text-stamp" href="#teacher" style="font-weight:600">查看完成情况 →</a>
+    </div>
+  </div>
+
+  <!-- 教师管理视图 -->
+  <div class="card mt-xl" id="teacher">
+    <p class="tiny muted" style="letter-spacing:.2em">教师视图 · 企业日语入门·1 班</p>
+    <div class="row gap-md mt-lg" style="flex-wrap:wrap">
+      <button class="btn btn-primary btn-sm" data-mark="原型示意：布置课时作业">布置课时</button>
+      <button class="btn btn-ghost btn-sm" data-mark="原型示意：导出完成率 CSV">导出完成率</button>
+      <span class="tiny muted" style="margin-left:auto">作业：L1 第 1–2 课 · 截止 10.20</span>
+    </div>
+    <table class="table mt-lg">
+      <tr><th>学员</th><th>课时完成</th><th>单词掌握</th><th>正确率</th><th>状态</th></tr>
+      <tr><td class="small">张 * 明</td><td class="small">2/2</td><td class="small">16/16</td><td class="small text-ok">94%</td><td><span class="chip" style="border-color:var(--ok);color:var(--ok)">已完成</span></td></tr>
+      <tr><td class="small">李 *</td><td class="small">2/2</td><td class="small">15/16</td><td class="small">88%</td><td><span class="chip" style="border-color:var(--ok);color:var(--ok)">已完成</span></td></tr>
+      <tr><td class="small">王 * 芳</td><td class="small">1/2</td><td class="small">9/16</td><td class="small text-gold">—</td><td><span class="chip" style="border-color:var(--gold);color:var(--gold)">进行中</span></td></tr>
+      <tr><td class="small">赵 *</td><td class="small">0/2</td><td class="small">2/16</td><td class="small muted">—</td><td><span class="chip" style="border-color:var(--stamp);color:var(--stamp)">未开始</span></td></tr>
+    </table>
+    <p class="tiny muted mt-md">老师只看得到汇总进度与正确率，看不到学生的私信和匿名设置。</p>
+  </div>
+  <div style="height:44px"></div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

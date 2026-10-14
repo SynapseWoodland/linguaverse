@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据看板 · LinguaVerse 后台</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-shell="admin" data-nav="dash" data-phase="1">
+<main class="admin-main">
+  <div class="row-between">
+    <div>
+      <h1 class="serif-cn" style="font-size:24px">数据看板</h1>
+      <p class="tiny muted mt-md">最近更新：10 月 13 日 14:00 · 数据每 10 分钟刷新</p>
+    </div>
+    <div class="row gap-sm">
+      <select class="input btn-sm" style="width:auto"><option>最近 7 天</option><option>最近 30 天</option></select>
+      <button class="btn btn-primary btn-sm" data-mark="原型示意：导出报表">导出报表</button>
+    </div>
+  </div>
+
+  <div class="grid mt-lg" style="grid-template-columns:repeat(4,1fr);gap:16px">
+    <div class="card"><p class="tiny muted">注册用户</p><div class="display mt-md" style="font-size:28px">12,486</div><p class="tiny text-ok mt-md">较上周 +312 (+2.6%)</p></div>
+    <div class="card"><p class="tiny muted">7 日活跃 DAU</p><div class="display mt-md" style="font-size:28px">4,902</div><p class="tiny text-ok mt-md">+5.1%</p></div>
+    <div class="card"><p class="tiny muted">今日完成课时</p><div class="display mt-md" style="font-size:28px">8,174</div><p class="tiny text-ok mt-md">+12%</p></div>
+    <div class="card"><p class="tiny muted">次日留存</p><div class="display mt-md" style="font-size:28px">61.4%</div><p class="tiny text-stamp mt-md">-0.8pt · 需观察</p></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.6fr 1fr;gap:18px;margin-top:18px">
+    <div class="card">
+      <p class="tiny muted" style="letter-spacing:.2em">活跃趋势（DAU）</p>
+      <svg viewBox="0 0 600 220" style="width:100%;height:auto" class="mt-md">
+        <line x1="40" y1="180" x2="580" y2="180" stroke="#D6D1C2"/>
+        <line x1="40" y1="20" x2="40" y2="180" stroke="#D6D1C2"/>
+        <path d="M40,150 C120,140 160,120 220,118 C300,112 340,86 400,80 C470,70 520,52 560,46" fill="none" stroke="#28456E" stroke-width="3"/>
+        <path d="M40,165 C130,160 190,150 260,146 C350,140 420,128 560,108" fill="none" stroke="#C2452F" stroke-width="2" stroke-dasharray="5 4"/>
+        <text x="500" y="40" font-size="10" fill="#28456E">DAU</text>
+        <text x="500" y="100" font-size="10" fill="#C2452F">完成课时用户</text>
+      </svg>
+    </div>
+    <div class="card">
+      <p class="tiny muted" style="letter-spacing:.2em">语种学习分布</p>
+      <div class="mt-lg col gap-md">
+        <div><div class="row-between tiny"><span>英语</span><b>58%</b></div><div class="bar mt-md"><i style="width:58%;background:var(--lang-en)"></i></div></div>
+        <div><div class="row-between tiny"><span>日语</span><b>31%</b></div><div class="bar mt-md"><i class="ko-fill" style="width:31%"></i></div></div>
+        <div><div class="row-between tiny"><span>韩语</span><b>11%</b></div><div class="bar mt-md"><i style="width:11%;background:var(--lang-ko)"></i></div></div>
+      </div>
+      <p class="tiny muted mt-lg">三语种学习人数比，用于决定新课排期。</p>
+    </div>
+  </div>
+
+  <!-- 系统健康：P1/P2 监控位 -->
+  <div class="card mt-lg">
+    <div class="row-between"><p class="tiny muted" style="letter-spacing:.2em">系统健康（P1 日志告警 · P2 APM 接入位）</p><span class="tiny text-ok">全部正常</span></div>
+    <div class="grid mt-md" style="grid-template-columns:repeat(4,1fr);gap:14px">
+      <div class="kv tiny"><span class="muted">API 可用率</span><b class="text-ok">99.94%</b></div>
+      <div class="kv tiny"><span class="muted">平均响应 P95</span><b>186 ms</b></div>
+      <div class="kv tiny"><span class="muted">今日 4xx / 5xx</span><b>0.4% / 0.02%</b></div>
+      <div class="kv tiny"><span class="muted">数据库连接池</span><b>32 / 50</b></div>
+    </div>
+    <p class="tiny muted mt-md">P1：应用日志聚合与错误告警；P2：APM 全链路追踪、慢接口与异常聚类。</p>
+  </div>
+
+  <div class="grid mt-lg" style="grid-template-columns:1fr 1fr;gap:18px">
+    <div class="card">
+      <p class="tiny muted" style="letter-spacing:.2em">待运营处理</p>
+      <div class="kv tiny mt-md"><a href="admin-moderation.html" class="text-stamp"><span>社区举报待审</span><b>7 条</b></a></div>
+      <div class="kv tiny"><a href="admin-users.html" class=""><span>解封申诉</span><b>3 条</b></a></div>
+      <div class="kv tiny"><a href="admin-courses.html"><span>待发布课时草稿</span><b>4 节</b></a></div>
+    </div>
+    <div class="card">
+      <p class="tiny muted" style="letter-spacing:.2em">漏斗（注册 → 定级 → 首课）</p>
+      <div class="col gap-sm mt-md tiny">
+        <div class="row-between"><span>访问注册页</span><b>100%</b></div><div class="bar"><i style="width:100%"></i></div>
+        <div class="row-between"><span>完成注册</span><b>72%</b></div><div class="bar"><i style="width:72%"></i></div>
+        <div class="row-between"><span>完成定级</span><b>58%</b></div><div class="bar"><i class="stamp-fill" style="width:58%"></i></div>
+        <div class="row-between"><span>完成首节课</span><b class="text-stamp">43%</b></div><div class="bar"><i class="stamp-fill" style="width:43%"></i></div>
+      </div>
+    </div>
+  </div>
+  <p style="height:30px"></p>
+</main>
+<script src="../assets/app.js"></script>
+</body>
+</html>

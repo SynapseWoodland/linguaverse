@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>单词闪卡 · LinguaVerse</title>
+<link rel="stylesheet" href="../assets/passport.css">
+</head>
+<body data-phase="m">
+<div style="max-width:560px;margin:0 auto;padding:24px 20px 60px">
+  <div class="row-between tiny muted">
+    <a href="lesson.html">← 返回课时</a>
+    <span data-card-count>3 / 8</span>
+  </div>
+  <div class="bar mt-lg"><i class="stamp-fill" style="width:37%"></i></div>
+
+  <!-- 闪卡：可翻转 -->
+  <div class="flip mt-xl" id="flip" data-card-stack>
+    <div class="card-face hide">
+      <div class="flip"><div class="flip-inner"><div class="flip-face stamp-card center" style="min-height:300px;display:flex;flex-direction:column;justify-content:center">
+        <p class="tiny muted">点击卡片翻面看释义</p>
+        <h2 class="display mt-md" style="font-size:46px">order</h2>
+        <p class="muted small mt-md">/ˈɔːrdər/</p>
+        <button class="btn btn-ghost btn-sm mt-lg" data-play>▶ 播放</button>
+      </div><div class="flip-face flip-back stamp-card center" style="min-height:300px;display:flex;flex-direction:column;justify-content:center" data-flip>
+        <p class="tiny muted">动词 / 名词</p>
+        <h3 class="serif-cn mt-md" style="font-size:26px">点餐；订单</h3>
+        <p class="serif mt-lg" style="font-size:17px">“Can I <b>order</b> a latte?”</p>
+        <p class="tiny muted mt-md">我可以点一杯拿铁吗？</p>
+        <p class="tiny text-stamp mt-md">点击卡片翻回正面</p>
+      </div></div></div>
+    </div>
+    <div class="card-face hide">
+      <div class="flip"><div class="flip-inner"><div class="flip-face stamp-card center" style="min-height:300px;display:flex;flex-direction:column;justify-content:center">
+        <h2 class="display" style="font-size:46px">size</h2>
+        <p class="muted small mt-md">/saɪz/</p>
+        <button class="btn btn-ghost btn-sm mt-lg" data-play>▶ 播放</button>
+      </div><div class="flip-face flip-back stamp-card center" style="min-height:300px;display:flex;flex-direction:column;justify-content:center" data-flip>
+        <h3 class="serif-cn" style="font-size:26px">尺寸；大小</h3>
+        <p class="serif mt-lg" style="font-size:17px">“What <b>size</b> would you like?”</p>
+        <p class="tiny muted mt-md">您想要什么杯型？</p>
+      </div></div></div>
+    </div>
+    <div class="card-face">
+      <div class="flip" id="cur"><div class="flip-inner"><div class="flip-face stamp-card center" style="min-height:300px;display:flex;flex-direction:column;justify-content:center">
+        <p class="tiny muted">点击卡片翻面看释义</p>
+        <h2 class="display mt-md" style="font-size:46px">for here</h2>
+        <button class="btn btn-ghost btn-sm mt-lg" data-play>▶ 播放</button>
+      </div><div class="flip-face flip-back stamp-card center" style="min-height:300px;display:flex;flex-direction:column;justify-content:center" data-flip>
+        <p class="tiny muted">短语</p>
+        <h3 class="serif-cn mt-md" style="font-size:26px">堂食（在店里用）</h3>
+        <p class="serif mt-lg" style="font-size:17px">“<b>For here</b>, please.”</p>
+        <p class="tiny muted mt-md">堂食，谢谢。（对应外带 to go）</p>
+      </div></div></div>
+    </div>
+    <div class="card-face hide">
+      <div class="stamp-card center" style="min-height:300px;display:flex;flex-direction:column;justify-content:center">
+        <h2 class="display" style="font-size:46px">to go</h2>
+        <h3 class="serif-cn mt-md" style="font-size:24px">外带；带走</h3>
+        <p class="serif mt-lg" style="font-size:17px">“To go, thanks.”</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 三档自评 -->
+  <p class="tiny muted center mt-lg">翻面后，凭记忆选择。系统会据此安排下次复习时间：</p>
+  <div class="grid mt-md" style="grid-template-columns:repeat(3,1fr);gap:12px">
+    <button class="btn btn-danger" data-card-nav="next" data-mark="不认识：今天会再次出现">✗ 不认识</button>
+    <button class="btn btn-ghost" style="border-color:var(--gold);color:var(--gold)" data-card-nav="next" data-mark="模糊：明天再考一次">～ 模糊</button>
+    <button class="btn btn-primary" style="background:var(--ok)" data-card-nav="next" data-mark="认识：3 天后到期复习">✓ 认识</button>
+  </div>
+  <p class="tiny muted center mt-lg">规则：不认识 → 当天再出现 · 模糊 → 明天 · 认识 → 3 天后</p>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>
