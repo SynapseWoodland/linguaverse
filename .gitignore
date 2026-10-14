@@ -17,3 +17,6 @@ client/playwright-report/
 
 # ---- one-off diff artifact ----
 QODER-SESSION-CHANGES.diff
+
+# ---- evidence / walkthrough screenshots (binary scratch, never commit) ----
+_walk/
