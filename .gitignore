@@ -1,0 +1,19 @@
+# ---- build / dependencies ----
+node_modules/
+client/dist/
+server/target/
+
+# ---- scratch logs & test output ----
+*.log
+_server-run*.log
+_tunnel.log
+_public-dev.log
+client/test-results/
+client/playwright-report/
+
+# ---- tool / IDE caches ----
+.idea/
+.qoder/
+
+# ---- one-off diff artifact ----
+QODER-SESSION-CHANGES.diff
